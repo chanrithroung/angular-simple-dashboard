@@ -1,0 +1,24 @@
+<div class="min-h-screen flex">
+    <!-- Sidebar  -->
+     <aside class="w-64 bg-gray-900 text-white flex flex-col">
+        <div class="p-4 text-2xl font-bold border-b border-gray-700">
+            Dashboard
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+            <a
+                *ngFor="let menu of menus"
+                [routerLink]="menu.path"
+                routerLinkActive="bg-gray-700 transition-color px-5"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 cursor-pointer transition"
+                >
+                <lucide-icon [name]="menu.icon" class="w-5 h-5"></lucide-icon>
+                <span>{{ menu.title }}</span>
+                </a>
+        </nav>
+     </aside>
+     <!-- Main -->
+      <main class="flex-1 min-h-screen">
+        <router-outlet></router-outlet>
+      </main>
+</div>

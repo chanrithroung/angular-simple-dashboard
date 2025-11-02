@@ -1,0 +1,101 @@
+<div class="p-6 min-h-screen bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="mb-8 flex items-center justify-between">
+    <div>
+      <h1 class="text-3xl font-semibold text-gray-900 mb-1">Reports</h1>
+      <p class="text-gray-500">Monitor system performance and business metrics.</p>
+    </div>
+    <button
+      class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+    >
+      <lucide-icon name="download" class="w-4 h-4"></lucide-icon>
+      Export Report
+    </button>
+  </header>
+
+  <!-- Stats Summary -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-medium text-gray-500">Revenue</h2>
+        <lucide-icon name="badge-dollar-sign" class="w-5 h-5 text-green-500"></lucide-icon>
+      </div>
+      <p class="mt-2 text-3xl font-semibold text-gray-900">$24,300</p>
+      <p class="text-sm text-green-600 mt-1">+8.5% since last week</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-medium text-gray-500">Active Users</h2>
+        <lucide-icon name="user" class="w-5 h-5 text-blue-500"></lucide-icon>
+      </div>
+      <p class="mt-2 text-3xl font-semibold text-gray-900">1,245</p>
+      <p class="text-sm text-green-600 mt-1">+3.2% this month</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-medium text-gray-500">Transactions</h2>
+        <lucide-icon name="credit-card" class="w-5 h-5 text-purple-500"></lucide-icon>
+      </div>
+      <p class="mt-2 text-3xl font-semibold text-gray-900">3,624</p>
+      <p class="text-sm text-green-600 mt-1">+12.7% growth</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-medium text-gray-500">Refunds</h2>
+        <lucide-icon name="rotate-ccw-square" class="w-5 h-5 text-red-500"></lucide-icon>
+      </div>
+      <p class="mt-2 text-3xl font-semibold text-gray-900">$1,120</p>
+      <p class="text-sm text-red-500 mt-1">−2.1% from last week</p>
+    </div>
+  </section>
+
+  <!-- Table: Recent Transactions -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4 text-gray-900">Recent Transactions</h2>
+
+    <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-gray-100">
+      <table class="min-w-full divide-y divide-gray-100">
+        <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-sm font-semibold text-gray-600">User</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold text-gray-600">Date</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold text-gray-600">Amount</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold text-gray-600">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 text-sm">
+          <tr class="hover:bg-gray-50 transition">
+            <td class="px-6 py-4 flex items-center gap-2">
+              <lucide-icon name="user" class="w-4 h-4 text-gray-400"></lucide-icon>
+              <span>Sok Dara</span>
+            </td>
+            <td class="px-6 py-4 text-gray-600">Nov 2, 2025</td>
+            <td class="px-6 py-4 font-semibold text-gray-800">$120.00</td>
+            <td class="px-6 py-4 text-green-600 font-medium">Completed</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition">
+            <td class="px-6 py-4 flex items-center gap-2">
+              <lucide-icon name="user" class="w-4 h-4 text-gray-400"></lucide-icon>
+              <span>Chanrith R.</span>
+            </td>
+            <td class="px-6 py-4 text-gray-600">Nov 1, 2025</td>
+            <td class="px-6 py-4 font-semibold text-gray-800">$75.50</td>
+            <td class="px-6 py-4 text-yellow-600 font-medium">Pending</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition">
+            <td class="px-6 py-4 flex items-center gap-2">
+              <lucide-icon name="user" class="w-4 h-4 text-gray-400"></lucide-icon>
+              <span>Netra M.</span>
+            </td>
+            <td class="px-6 py-4 text-gray-600">Oct 31, 2025</td>
+            <td class="px-6 py-4 font-semibold text-gray-800">$210.30</td>
+            <td class="px-6 py-4 text-red-600 font-medium">Failed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
